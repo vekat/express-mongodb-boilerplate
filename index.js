@@ -25,7 +25,7 @@ fs.readdirSync(__dirname + '/schemas/').forEach(function (file) {
 });
 app.use('/', require('./routes'));
 app.use(function(err, req, res, next){
-    if(req.sendHeaders) return next();
+    if (res.headersSent) return next(err);
     res.status(500).json({ message : err.message });
 });
 app.use(function(req, res, next){
