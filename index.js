@@ -7,6 +7,7 @@ path = require('path'),
 methodOverride = require('method-override'),
 logger = require('morgan'),
 bodyParser = require('body-parser');
+mongoose.Promise = require('bluebird');
 db = mongoose.connection;
 
 app.use(logger('dev'));
