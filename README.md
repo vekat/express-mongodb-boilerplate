@@ -14,4 +14,5 @@ Node.js application boilerplate based on [Express.js](http://expressjs.com/) and
 * Custom Routes;
 * Custom Endpoints/Middlewares;
 * Custom Schemas;
+* User authentication [using passport](https://www.npmjs.com/package/passport);
 * Work with ES6 [using babel](https://babeljs.io/);
