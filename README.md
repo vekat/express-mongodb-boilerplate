@@ -29,7 +29,7 @@ let mvalidate = (req, res, next) => {
     return next();
 };
 //validation before postOne middleware
-router.use('/example').post(mvalidate, (req, res) => {
+router.route('/example').post(mvalidate, (req, res) => {
     //code here...
 });
 
@@ -41,7 +41,7 @@ var mvalidate = function(req, res, next){
       return next();
 };
 //validation before postOne middleware
-router.use('/example').post(mvalidate, function(req, res){
+router.route('/example').post(mvalidate, function(req, res){
     //code here...
 });
 ```
