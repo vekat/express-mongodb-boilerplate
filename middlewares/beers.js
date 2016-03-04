@@ -1,4 +1,5 @@
-var Beer = require('mongoose').model('Beer');
+var mongoose = require('mongoose');
+var Beer = require('../schemas/beer.js');
 
 exports.getAll = function(req, res, next){
     var query = Beer.find();
